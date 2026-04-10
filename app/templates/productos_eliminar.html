@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Producto</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h2>Eliminar Producto</h2>
+
+<div class="container" style="text-align:center;">
+    <p>¿Seguro que quieres eliminar <strong>{{ producto.nombre }}</strong>?</p>
+
+    <form method="post">
+        <button type="submit" class="delete">Eliminar</button>
+        <a href="/productos/listar"><button type="button">Cancelar</button></a>
+    </form>
+</div>
+
+<footer>MiniERP © 2026</footer>
+
+</body>
+</html>

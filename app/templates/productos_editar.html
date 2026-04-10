@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>Editar Producto</h1>
+
+<form action="/productos/actualizar/{{ producto.id }}" method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" value="{{ producto.nombre }}"><br>
+
+    <label>Precio:</label>
+    <input type="number" name="precio" step="0.01" value="{{ producto.precio }}"><br>
+
+    <label>Stock:</label>
+    <input type="number" name="stock" value="{{ producto.stock }}"><br>
+
+    <button type="submit">Actualizar</button>
+</form>
+
+<footer>MiniERP © 2026</footer>
+
+</body>
+</html>

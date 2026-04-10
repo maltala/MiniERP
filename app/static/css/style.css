@@ -1,0 +1,116 @@
+/* ====== MiniERP Global Styles ====== */
+
+/* Fuente y colores base */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Botones secundarios */
+button.edit {
+    background-color: #2196F3;
+}
+
+button.edit:hover {
+    background-color: #1976D2;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Tablas */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Formularios */
+form {
+    width: 300px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Mensajes */
+.message {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9em;
+}

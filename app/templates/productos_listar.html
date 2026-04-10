@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h1>Listado de Productos</h1>
+
+<div class="container" style="text-align:center;">
+    <a href="/productos/nuevo">
+        <button>Nuevo Producto</button>
+    </a>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in productos %}
+        <tr>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.precio }}</td>
+            <td>{{ p.stock }}</td>
+            <td>
+                <a href="/productos/editar/{{ p.id }}"><button class="edit">Editar</button></a>
+                <a href="/productos/eliminar/{{ p.id }}"><button class="delete">Eliminar</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<footer>MiniERP © 2026</footer>
+
+</body>
+</html>
